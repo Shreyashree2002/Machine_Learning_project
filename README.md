@@ -40,9 +40,9 @@ Before training the model, we need to preprocess the data:
 Normalize: We scale the pixel values of the images to a range between 0 and 1. This helps the model learn more effectively by ensuring that all pixel values are on a similar scale.
 ## 5. Build the Model
 We create a neural network model using the Sequential API:
-Input Layer: Defines the shape of the input images (28x28 pixels).
-Flatten Layer: Converts the 2D images into 1D vectors so that they can be processed by the following layers.
-Dense Layers: Fully connected layers that perform computations on the data. The first dense layer has 128 neurons and uses the ReLU activation function, which introduces non-linearity. The output layer has 10 neurons (one for each digit) and uses the softmax activation function to produce probabilities for each class.
+### Input Layer: Defines the shape of the input images (28x28 pixels).
+### Flatten Layer: Converts the 2D images into 1D vectors so that they can be processed by the following layers.
+### Dense Layers: Fully connected layers that perform computations on the data. The first dense layer has 128 neurons and uses the ReLU activation function, which introduces non-linearity. The output layer has 10 neurons (one for each digit) and uses the softmax activation function to produce probabilities for each class.
 ## 6. Compile the Model
 We configure the model for training:
 Loss Function: sparse_categorical_crossentropy measures how well the model's predictions match the actual labels. This function is suitable for multi-class classification tasks.
