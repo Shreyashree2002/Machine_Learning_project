@@ -1,5 +1,5 @@
 # CodeAlpha_Machine_Learning
-# Credit Scoring Prediction
+# TASK-1:Credit Scoring Model
 A Credit Scoring Prediction Model is a machine learning model designed to evaluate the creditworthiness of individuals or businesses by predicting the likelihood that they will default on a loan .
 ## Key Components of a Credit Scoring Prediction Model:
 ### Input Features (Predictors): 
@@ -24,3 +24,47 @@ Accuracy: Measure how often the model correctly predicts defaults and non-defaul
 Confusion Matrix: Shows true positives, false positives, true negatives, and false negatives.
 Precision and Recall: Precision measures the accuracy of positive predictions, while recall measures the ability to capture all actual defaults.
 F1-Score: Balances precision and recall to give a single performance metric.
+
+# TASK-2:Hand Written Character Recognition
+Handwritten Character Recognition (HCR) is a technology used to identify and interpret handwritten text. This process involves the automatic detection of individual characters from images or scanned documents of handwritten text.This project demonstrates how to build and evaluate a handwritten digit recognition model using a neural network. We start by loading and preprocessing the data, then build and train a model, and finally evaluate its performance. Visualization helps us understand how well the model is learning and making predictions.Here's a step-by-step description of the handwritten character recognition project, explained below:
+## 1. Import Libraries
+We start by importing the necessary libraries: TensorFlow and Keras , Matplotlib, Scikit-learn.
+## 2. Load and Inspect Data
+We load the MNIST dataset, which contains images of handwritten digits (0-9) along with their labels:
+Training Data: This includes images and labels used to teach the model.
+Test Data: This is used to evaluate how well the model performs on new, unseen data.
+## 3. Visualize a Sample Image
+We use Matplotlib to display an image from the training set. This helps us verify that the images are correctly loaded and gives us an idea of what the handwritten digits look like.
+## 4. Preprocess Data
+Before training the model, we need to preprocess the data:
+Normalize: We scale the pixel values of the images to a range between 0 and 1. This helps the model learn more effectively by ensuring that all pixel values are on a similar scale.
+## 5. Build the Model
+We create a neural network model using the Sequential API:
+Input Layer: Defines the shape of the input images (28x28 pixels).
+Flatten Layer: Converts the 2D images into 1D vectors so that they can be processed by the following layers.
+Dense Layers: Fully connected layers that perform computations on the data. The first dense layer has 128 neurons and uses the ReLU activation function, which introduces non-linearity. The output layer has 10 neurons (one for each digit) and uses the softmax activation function to produce probabilities for each class.
+## 6. Compile the Model
+We configure the model for training:
+Loss Function: sparse_categorical_crossentropy measures how well the model's predictions match the actual labels. This function is suitable for multi-class classification tasks.
+Optimizer: Adam is used to adjust the model’s weights during training to minimize the loss function.
+Metrics: We track accuracy to see how well the model is performing.
+## 7. Train the Model
+We train the model using the training data:
+Epochs: The number of times the model will go through the entire training dataset.
+Validation Split: We use a portion of the training data for validation to monitor the model's performance on unseen data during training.
+## 8. Evaluate the Model
+After training, we evaluate the model's performance on the test data:
+Predictions: We use the trained model to make predictions on the test set and determine which digit each image most likely represents.
+Accuracy Score: We compare the predicted labels with the actual labels to calculate the accuracy of the model.
+## 9. Plot Training and Validation Metrics
+We visualize the training process:
+Loss Plot: Shows how the loss (error) changes over time during training. Helps us see if the model is learning effectively or if there are signs of overfitting.
+Accuracy Plot: Displays how the accuracy of the model improves over time. This helps us understand how well the model is performing on both training and validation data.
+## 10. Make Predictions and Visualize
+We use the trained model to make predictions on specific test images:
+Visualize Test Image: We display an image from the test set to see what the model is predicting.
+Predict Single Image: We use the model to predict the digit in a specific test image and check if the prediction is correct.
+
+# TASK-3:Disease Prediction from Medical Data
+
+
