@@ -1,4 +1,4 @@
-# CodeAlpha_Machine_Learning
+# Machine_Learning_Project
 # TASK-1:Credit Scoring Model
 A Credit Scoring Prediction Model is a machine learning model designed to evaluate the creditworthiness of individuals or businesses by predicting the likelihood that they will default on a loan .
 ## Key Components of a Credit Scoring Prediction Model:
